@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "environments": "libs/environments",
+    "namo-mobile": "apps/namo-mobile",
+    "namo-webapp": "apps/namo-webapp",
+    "services": "libs/services",
+    "themes": "libs/themes",
+    "ui": "libs/ui",
+    "utils": "libs/utils"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "declaration": true,
+    "types": [],
+    "paths": {
+      "@namo-workspace/environments": ["libs/environments/src/index.ts"],
+      "@namo-workspace/utils": ["libs/utils/src/index.ts"]
+    }
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["jest.config.ts", "**/*.spec.ts"]
+}

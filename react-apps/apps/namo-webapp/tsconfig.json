@@ -1,0 +1,40 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@namo-workspace/ui/*": ["libs/ui/src/lib/web/*"],
+      "@namo-workspace/environments": ["libs/environments/src/index.ts"],
+      "@namo-workspace/services": ["libs/services/src/index.ts"],
+      "@namo-workspace/themes": ["libs/themes/src/index.ts"],
+      "@namo-workspace/utils": ["libs/utils/src/index.ts"],
+      "@namo-workspace/yupSchema/*": ["libs/utils/src/lib/yupSchema/*"],
+      "@assets/*": ["apps/namo-webapp/src/assets/*"],
+      "@services/*": ["apps/namo-webapp/src/services/*"],
+      "@constants/*": ["apps/namo-webapp/src/constants/*"],
+      "@context/*": ["apps/namo-webapp/src/context/*"],
+      "@containers/*": ["apps/namo-webapp/src/containers/*"],
+      "@components/*": ["apps/namo-webapp/src/components/*"],
+      "@hooks/*": ["apps/namo-webapp/src/hooks/*"]
+    }
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
+}

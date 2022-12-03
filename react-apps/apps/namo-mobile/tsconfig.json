@@ -1,0 +1,44 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@namo-workspace/ui/*": ["libs/ui/src/lib/mobile/*"],
+      "@namo-workspace/themes": ["libs/themes/src/index.ts"],
+      "@namo-workspace/environments": [
+        "libs/environments/src/lib/environment.rn.ts"
+      ],
+      "@namo-workspace/services": ["libs/services/src/index.ts"],
+      "@namo-workspace/utils": ["libs/utils/src/index.ts"],
+      "@namo-workspace/yupSchema/*": ["libs/utils/src/lib/yupSchema/*"],
+      "@namo-workspace/shared/*": ["libs/ui/src/lib/shared/*"],
+      "@images": ["apps/namo-mobile/src/assets/images/index.ts"],
+      "@assets": ["apps/namo-mobile/src/assets"],
+      "@constants/*": ["apps/namo-mobile/src/constants/*"],
+      "@containers/*": ["apps/namo-mobile/src/containers/*"],
+      "@context/*": ["apps/namo-mobile/src/context/*"],
+      "@models/*": ["apps/namo-mobile/src/models/*"],
+      "@routes/*": ["apps/namo-mobile/src/routes/*"],
+      "@screens/*": ["apps/namo-mobile/src/screens/*"],
+      "@services/*": ["apps/namo-mobile/src/services/*"],
+      "@type/*": ["apps/namo-mobile/src/type/*"]
+    }
+  },
+  "files": ["../../node_modules/@nrwl/react-native/typings/svg.d.ts"],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "exclude": ["node_modules"]
+}
